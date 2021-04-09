@@ -12,8 +12,8 @@
 .header {
     background-color:#023f3f;
     height: 500px;
-    border-bottom-right-radius: 500px;
-    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 400px;
+    border-bottom-left-radius: 400px;
     text-align: center;
 }
 .headlines {
@@ -21,7 +21,7 @@
     font-size: 150px;
     font-family: 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
-    padding-right: 90px;
+    padding-right: 70px;
 }
 #headerbox {
     margin-top: -150px;
@@ -33,12 +33,13 @@
     color: rgb(255, 248, 240);
     font-size: 40px;
     font-family: 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
     padding-right: 50px;
 }
 .socials {
     width: fit-content;
     margin-top: -30px;
+    padding-right: 50px;
 }
 .socialpics {
     opacity: 50%;
@@ -70,12 +71,29 @@ h3 {
     padding: 2% 2% 2% 2%;
     background-color:#023f3f;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 }
+
+.pics img {
+    width: 100%;
+    height: auto;
+}
+
 .clips {
     padding: 2% 2% 2% 2%;
     background-color:#023f3f;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
+
+.clips video {
+    width: 100%;
+    height: auto;
+}
+
 #navigation {
     overflow: hidden;
     background-color:#313838;

@@ -1,48 +1,41 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <body>
-        <style>
-            body {
-              background-image: url('Fotos/Foto013.jpg');
-              background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-            button {
-                width: 50%;
-                border: none;
-                padding: 14px 28px;
-                font-size: 14px;
-                cursor: pointer;
-                text-align: center; 
-                margin: auto;
-            }
-            </style>
-        <div class="Box" style="color: azure;">
-            <h1 class="Titel"> <b>Contact</b></h1>
-            <div class="text">
-                <h2>Social Media</h2>
-                    <div style="text-align:left;" id="button">
-                        <a href="https://www.instagram.com/dieameno/" target="blank">
-                            <img src="Icons/Instagram.png" Titel="Bild6" style="width: 3%; text-decoration: none;">
-                        </a>
-                    <div style="text-align:left;" id="button"></div>
-                        <a href="https://steamcommunity.com/id/diepustekuchen" target="blank">
-                                <img src="Icons/Steam02.png" Titel="Bild6" style="width: 3%; text-decoration: none;">
-                        </a>
-            </div>
-            <div style="text-align: center; margin-top: 10%;" id="button">
-                <a href="Portfolio_ArminaMusic.html">
-                    <button class="button">My Portfolio</button> 
-                </a>          
-                <a href="Aboutme.html">
-                    <button class="button">About me</button>
-                </a>
-                <a href="#">
-                    <button class="button">Contact</button>
-                </a>
-        </div>
-        <br>
+    <link rel="stylesheet" href="/03_MeinPortfolioCSS/stylesheet.css">
+</head>
+    <body class="background">
+        <div class="content">
+            <header class="header">
+                <div id="navigation">
+                    <a href="/03_MeinPortfolioCSS/PortfolioCSS.html">Portfolio</a>
+                    <a href="/03_MeinPortfolioCSS/Aboutme.html">About Me</a>
+                    <a class="active" href="/03_MeinPortfolioCSS/Contacts.html">Contact</a>
+                </div>
+                <br>
+                <h1 class="headlines">Portfolio</h1>
+                <br>
+                <div id="headerbox">
+                    <p class="headertext">Armina Music</p>
+                <div id="socials">
+                    <a target="_blank" href="https://www.instagram.com/dieameno/">
+                        <img class="socialpics" src="Pictures/Icons/Instagram.png" alt="InstagramLogo" style="Width: 30px;">
+                    </a>
+                    <a target="_blank" href="https://steamcommunity.com/id/diepustekuchen">
+                        <img class="socialpics" src="Pictures/Icons/Steam.png" alt="SteamLogo" style="Width: 30px;">
+                    </a>
+                </div>
+            </header>
+            <main class="main">
+                <h2><u>Contact me</u></h2><br>
+                <form action="#" class="contactform" autocomplete="on">
+                    <input class="form-text" type="text" name="fname" placeholder="Vorname" required><br>
+                <input class="form-text" type="text" name="lname" placeholder="Nachname" required><br>
+                <input class="form-text" type="email" name="email" placeholder="E-Mail" required><br>
+                <textarea name="message" placeholder="Nachricht" required></textarea><br>
+                <p id="confirmation-text">Indem Sie auf "Senden" klicken, stimmen Sie unseren Nutzungsbedingungen und Datenschutzrechtlinien zu.</p>
+                <input type="submit" class="form-button">
+                </form>
+            </main>
         </div>
     </body>
-</head>
+</html>

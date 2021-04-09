@@ -1,59 +1,41 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <body>
-        <style>
-            body {
-              background-image: url('Fotos/Foto013.jpg');
-              background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-            button {
-                width: 50%;
-                border: none;
-                padding: 14px 28px;
-                font-size: 14px;
-                cursor: pointer;
-                text-align: center; 
-                margin: auto;
-            }
-            </style>
-        <div class="Box">
-            <h1 class="Titel" style="color: azure;"> About Me</h1>
-            <br>
-        <a href="Me/me01.jpg" target="blank">
-            <img src="Me/me01.jpg" Titel="Me" style="width: 10%; text-decoration: none;">
-            </a>
-            <div class="text" style="color: azure;">
-
-                    <b>Name:</b>
-                     Armina Music
-                     <br>
-                    <b>Alias:</b>
-                     Ameno
-                     <br>
-                    <b>Birthday:</b>
-                     16.02.1998
-                     <br>
-                    <b>University:</b>
-                     Hochschule Furtwangen
-                     <br>
-                    <b>Degree:</b>
-                     Medienkonzeption B.A.
-                     <br>
-            </div>
-            <div style="text-align: center; margin-top: 7%;" id="button">
-                <a href="Portfolio_ArminaMusic.html">
-                    <button class="button">My Portfolio</button> 
-                </a>          
-                <a href="#">
-                    <button class="button">About me</button>
-                </a>
-                <a href="Contacts.html">
-                    <button class="button">Contact</button>
-                </a>
-        </div>
-        <br>
+    <link rel="stylesheet" href="/03_MeinPortfolioCSS/stylesheet.css">
+</head>
+    <body class="background">
+        <div class="content">
+            <header class="header">
+                <div id="navigation">
+                    <a href="/03_MeinPortfolioCSS/PortfolioCSS.html">Portfolio</a>
+                    <a class="active" href="/03_MeinPortfolioCSS/Aboutme.html">About Me</a>
+                    <a href="/03_MeinPortfolioCSS/Contacts.html">Contact</a>
+                </div>
+                <br>
+                <h1 class="headlines">Portfolio</h1>
+                <br>
+                <div id="headerbox">
+                    <p class="headertext">Armina Music</p>
+                <div id="socials">
+                    <a target="_blank" href="https://www.instagram.com/dieameno/">
+                        <img class="socialpics" src="Pictures/Icons/Instagram.png" alt="InstagramLogo" style="Width: 30px;">
+                    </a>
+                    <a target="_blank" href="https://steamcommunity.com/id/diepustekuchen">
+                        <img class="socialpics" src="Pictures/Icons/Steam.png" alt="SteamLogo" style="Width: 30px;">
+                    </a>
+                </div>
+            </header>
+            <main class="main">
+                <h2><u>About Me</u></h2><br>
+                <div class="inhalt">
+                    <a href="/03_MeinPortfolioCSS/Pictures/Me/me01.jpg" target="_blank"><img id="profilbild" src="/03_MeinPortfolioCSS/Pictures/Me/me01.jpg" alt="Profilbild" title="Profilbild" style="width: 30%; border-radius: 12px;"></a>
+                    <p><b>Name:</b> Armina Music</p>
+                    <p><b>Alias:</b> Ameno</p>
+                    <p><b>Geburtstag:</b> 16.02.1998</p>
+                    <p><b>University:</b> Hochschule Furtwangen</p>
+                    <p><b>Degree:</b> Medienkonzeption B.A.</p>
+                </div><br>
+            </main>
         </div>
     </body>
-</head>
+</html>

@@ -20,7 +20,6 @@
     color: rgb(255, 248, 240);
     font-size: 150px;
     font-family: 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
     padding-right: 70px;
 }
 #headerbox {
@@ -31,7 +30,7 @@
 }
 .headertext {
     color: rgb(255, 248, 240);
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     padding-right: 50px;
@@ -55,7 +54,6 @@ h2 {
     color:#023f3f;
     font-size: 35px;
     font-family:'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
 }
 h3 {
     color:#023f3f;
@@ -172,7 +170,6 @@ textarea {
     font-size: 20px;
     font-family:'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    text-decoration: underline;
     border-radius: 20px;
     border: 2px solid #023f3f;
     transition-duration: 0.4s;

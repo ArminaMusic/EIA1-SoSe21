@@ -1,5 +1,5 @@
 .background {
-    background-image: url('/03_MeinPortfolioCSS/Pictures/Back/bg.png');
+    background-image: url('../03_MeinPortfolioCSS/Pictures/Back/bg.png');
     background-repeat: repeat;
     background-size: 30px;
 }

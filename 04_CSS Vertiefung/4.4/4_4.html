@@ -5,40 +5,23 @@
     <title>Aufgabe4.4</title>
     <link rel="stylesheet" href="../4.4/card_4.css">
 </head>  
-<body>
-    <header>
-        <div id="wrapper">
-            <img src="../4.4/wrapperbg.png" alt="wrapperbg">
+<body class="background">
+    <div class="wrapper">
+        <div class="text">
+            <h1>Bewertung</h1>
         </div>
-    </header>
-    <main>
-        <div class="form">
-            <h1>Formular</h1>
-            <form>
-                <div id="top">
-                    <label class="label1" for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" value=""><br>
-                    <br>
-                    <label class="label1" for="Nachricht">Urlaubsgrüße:</label><br>
-                    <input type="text" id="Nachricht" name="Nachricht" value=""><br>
-                </div>
-
-                <p>Wähle Dein Layout</p>
-
-                <div class="label2">
-                    <input type="radio" name="wahl" value="eins">
-                    <label id="eins">Eins</label>
-                </div>
-                <br>
-                <div class="label2">
-                    <input type="radio" name="wahl" value="zwei">
-                    <label id="zwei">Zwei</label>
-                </div>
-                <div class="button">
-                     <br><button>Senden</button>
-                </div>
-            </form>
-        </div>
-    </main>
+        <form class="form" action="#">
+            <label for="name">Ihr Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="comment">Schreiben Sie hier Ihre Bewertung:</label><br>
+            <textarea name="comment" id="comment" cols="50" rows="5" required></textarea><br>
+            <label for="recommend">Würden Sie einen Urlaub in Furtwangen weiterempfehlen?</label><br>
+            <input type="radio" name="recommend" id="yes" value="yes" required>
+            <label for="yes">Ja</label>
+            <input type="radio" name="recommend" id="no" value="no" required>
+            <label for="no">Nein</label><br>
+            <input type="submit" value="Senden">
+        </form>
+    </div>
 </body>
 </html>

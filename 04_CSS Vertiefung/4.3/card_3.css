@@ -1,28 +1,30 @@
-body{
-    background-image: url(../4.3/bg.png);    
+.background{
+    background-image: url("../4.3/bg.png");
+    background-repeat: repeat;
+    background-size: 40px;
 }
-#wrapper{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.cardbox{
+    width: fit-content;
+    margin: auto;
+    margin-top: 150px;
 }
-.text{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  
-}
+
 h1{
+    position: absolute;
     color: white;
+    margin-top: -350px;
+    margin-left: 70px;
     font-size: 50px;
     font-family: font;
 }
-h2{
+
+p{
+    position: absolute;
     color: white;
-    font-size: 25px;
+    margin-top: -260px;
+    margin-left: 40px;
+    font-size: 20px;
     font-family: font;
 }
 

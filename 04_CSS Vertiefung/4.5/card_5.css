@@ -1,37 +1,37 @@
-body{
-    background-image: url(../4.5/bg.png);    
+.background {
+    background-image: url(../4.5/bg.png);
+    background-repeat: repeat;
+    background-size: auto;
 }
-#wrapper{
-    display: flex;
+.wrapper {
+    background-image: url(../4.5/wrapperbg.png);
+    width: 600px; height: 400px;
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+.wrapper .text {
+    padding: 30px;
+    margin-left: 10px;
 }
-h1{
+.wrapper .text h1 {
     color: white;
-    font-size: 45px;
-    margin-top: -30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    width: 500px;
 }
-.text{
+.wrapper .text p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    columns: 3;
+}
+b {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-#drei{
-    width: 500px;
-    column-count: 3;
-    color: white;
-	text-align: justify;
-    column-gap: 50px;
-    margin-top: 30px;
-}
-#zwei{
-    width: 500px;
-    column-count: 2;
-    color: white;
-    text-align: justify;
-    column-gap: 50px;
-    margin-top: 30px;
+    transform: translate(-50%);
+    columns: 2;
 }

@@ -52,7 +52,7 @@ console.log(`Relativ zu Gesamtemission der Welt verursacht ${australia2018} dami
 
 console.log(`Für ${countryafrica} hat sich 2018 im Vergleich zu 2008 die Emission um ${calcVerändert(africa2018, africa2008)} % verändert`);
 console.log(`Für ${countrysouthamerica} hat sich 2018 im Vergleich zu 2008 die Emission ${calcVerändert(southamerica2018, southamerica2008)} % verändert`);
-console.log(`Für ${countryeurope} hat sich 2018 im Vergleich zu 2008 die Emission um ${calcVerändert(southamerica2018, southamerica2008)} % verändert`);
+console.log(`Für ${countryeurope} hat sich 2018 im Vergleich zu 2008 die Emission um ${calcVerändert(europe2018, europe2008)} % verändert`);
 console.log(`Für ${countrynorthamerica} hat sich 2018 im Vergleich zu 2008 die Emission um ${calcVerändert(northamerica2018, northamerica2008)} % verändert`);
 console.log(`Für ${countryasia} hat sich 2018 im Vergleich zu 2008 die Emission um ${calcVerändert(asia2018, asia2008)} % verändert`);
 console.log(`Für ${countryaustralia} hat sich 2018 im Vergleich zu 2008 die Emission um ${calcVerändert(australia2018, australia2008)} % verändert`);

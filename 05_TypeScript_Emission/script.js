@@ -46,7 +46,7 @@ console.log("Relativ zu Gesamtemission der Welt verursacht " + countryasia + " d
 console.log("Relativ zu Gesamtemission der Welt verursacht " + australia2018 + " damit " + calcGesamtemission(australia2018, all) + " %");
 console.log("F\u00FCr " + countryafrica + " hat sich 2018 im Vergleich zu 2008 die Emission um " + calcVerändert(africa2018, africa2008) + " % ver\u00E4ndert");
 console.log("F\u00FCr " + countrysouthamerica + " hat sich 2018 im Vergleich zu 2008 die Emission " + calcVerändert(southamerica2018, southamerica2008) + " % ver\u00E4ndert");
-console.log("F\u00FCr " + countryeurope + " hat sich 2018 im Vergleich zu 2008 die Emission um " + calcVerändert(southamerica2018, southamerica2008) + " % ver\u00E4ndert");
+console.log("F\u00FCr " + countryeurope + " hat sich 2018 im Vergleich zu 2008 die Emission um " + calcVerändert(europe2018, europe2008) + " % ver\u00E4ndert");
 console.log("F\u00FCr " + countrynorthamerica + " hat sich 2018 im Vergleich zu 2008 die Emission um " + calcVerändert(northamerica2018, northamerica2008) + " % ver\u00E4ndert");
 console.log("F\u00FCr " + countryasia + " hat sich 2018 im Vergleich zu 2008 die Emission um " + calcVerändert(asia2018, asia2008) + " % ver\u00E4ndert");
 console.log("F\u00FCr " + countryaustralia + " hat sich 2018 im Vergleich zu 2008 die Emission um " + calcVerändert(australia2018, australia2008) + " % ver\u00E4ndert");

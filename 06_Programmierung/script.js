@@ -27,6 +27,7 @@ var all = africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia20
 //Emission
 function emission(countryName, emissionen2018, emission2008) {
     document.querySelector(".country").innerHTML = countryName;
+    document.querySelector(".country1").innerHTML = countryName;
     document.querySelector(".emissionen2018").innerHTML = emissionen2018.toString();
     document.querySelector(".relativeToWorld").innerHTML = Math.round(emissionen2018 / all * 100 * 100) / 100 + "%";
     document.querySelector(".growthRate").innerHTML = Math.round((emissionen2018 - emission2008) / emission2008 * 100 * 100 / 100) + "%";

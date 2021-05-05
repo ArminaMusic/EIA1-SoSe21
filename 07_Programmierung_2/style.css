@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(102, 102, 102), rgb(77, 77, 77));
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum_box {
+  display: flex;
+  width: 500px;
+  height: 650px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.drumbutton {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+}
+.drumbutton:hover {
+  cursor: pointer;
+}
+
+#play-button {
+  opacity: 70%;
+}
+#play-button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+/*Drum_Buttons*/
+#drum1 {
+  background-color: #ff7777;
+}
+#drum1:hover {
+  background-color: #f75656;
+}
+
+#drum2 {
+  background-color: #ffcb6a;
+}
+#drum2:hover {
+  background-color: #ffb62e;
+}
+
+#drum3 {
+  background-color: #daff82;
+}
+#drum3:hover {
+  background-color: #c3ff38;
+}
+
+#drum4 {
+  background-color: #71ff84;
+}
+#drum4:hover {
+  background-color: #2bff47;
+}
+
+#drum5 {
+  background-color: #7cfbff;
+}
+#drum5:hover {
+  background-color: #1bced4;
+}
+
+#drum6 {
+  background-color: #7caaff;
+}
+#drum6:hover {
+  background-color: #2672ff;
+}
+
+#drum7 {
+  background-color: #c073ff;
+}
+#drum7:hover {
+  background-color: #a02bff;
+}
+
+#drum8 {
+  background-color: #ffccff;
+}
+#drum8:hover {
+  background-color: #ff35ff;
+}
+
+#drum9 {
+  background-color: #ff7ac7;
+}
+#drum9:hover {
+  background-color: #ff34ab;
+}

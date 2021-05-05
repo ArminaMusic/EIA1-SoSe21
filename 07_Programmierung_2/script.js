@@ -42,11 +42,11 @@ document.querySelector(".drum_box").addEventListener("click", function (e) {
             break;
     }
 });
-//function manual play:
+//function manual play
 function playSample(x) {
     sounds[x].play();
 }
-//Beat_Array:
+//Beat_Array
 var beat = [];
 beat[0] = new Audio("../07_Programmierung_2/task_material/assets/kick.mp3");
 beat[1] = new Audio("../07_Programmierung_2/task_material/assets/snare.mp3");
@@ -55,12 +55,12 @@ var myIntervall;
 document.querySelector("#playbutton").addEventListener("click", function () {
     definedBeat();
 });
-//function beat:
+//function beat
 function definedBeat() {
     beat[0].play();
     beat[1].play();
     beat[2].play();
-    //Intervall zwischen den Sounds definiert:
+    //Intervall between Sounds
     myIntervall = setInterval(definedBeat, 500);
 }
 //# sourceMappingURL=script.js.map

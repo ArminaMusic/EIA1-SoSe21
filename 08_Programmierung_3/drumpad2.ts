@@ -1,20 +1,20 @@
-//sounds
-let sounds: HTMLAudioElement[] = [];
-sounds[0] = new Audio("./L08/task_material/assets/A.wav");
-sounds[1] = new Audio("./L08/task_material/assets/B.wav");
-sounds[2] = new Audio("./L08/task_material/assets/bass.wav");
-sounds[3] = new Audio("./L08/task_material/assets/guitar.mp3");
-sounds[4] = new Audio("./L08/task_material/assets/8081.wav");
-sounds[5] = new Audio("./L08/task_material/assets/kick.mp3");
-sounds[6] = new Audio("./L08/task_material/assets/8082.wav");
-sounds[7] = new Audio("./L08/task_material/assets/8083.wav");
-sounds[8] = new Audio("./L08/task_material/assets/snare.mp3");
+//sound
+let sound: HTMLAudioElement[] = [];
+sound[0] = new Audio("./L08/task_material/assets/A.wav");
+sound[1] = new Audio("./L08/task_material/assets/B.wav");
+sound[2] = new Audio("./L08/task_material/assets/bass.wav");
+sound[3] = new Audio("./L08/task_material/assets/guitar.mp3");
+sound[4] = new Audio("./L08/task_material/assets/8081.wav");
+sound[5] = new Audio("./L08/task_material/assets/kick.mp3");
+sound[6] = new Audio("./L08/task_material/assets/8082.wav");
+sound[7] = new Audio("./L08/task_material/assets/8083.wav");
+sound[8] = new Audio("./L08/task_material/assets/snare.mp3");
 
 //HTML_Element
 const playButton: HTMLElement = document.getElementById("play");
 const stopButton: HTMLElement = document.getElementById("stop");
 const deleteButton: HTMLElement = document.getElementById("delete");
-const recordButtonBlack: HTMLElement = document.getElementById("record-black");
+const recordBBlack: HTMLElement = document.getElementById("record-black");
 const recordButtonRed: HTMLElement = document.getElementById("record-red");
 const questionMark: HTMLElement = document.getElementById("question-mark");
 const closeButton: HTMLElement = document.getElementById("close");
@@ -49,39 +49,39 @@ document.addEventListener("keydown", function (event: KeyboardEvent): void {
   //console.log(event);
   switch (event.key) {
     case "1":
-      playSample(0);
+      playSample2(0);
       recordABeat(0);
       break;
     case "2":
-      playSample(1);
+      playSample2(1);
       recordABeat(1);
       break;
     case "3":
-      playSample(2);
+      playSample2(2);
       recordABeat(2);
       break;
     case "4":
-      playSample(3);
+      playSample2(3);
       recordABeat(3);
       break;
     case "5":
-      playSample(4);
+      playSample2(4);
       recordABeat(4);
       break;
     case "6":
-      playSample(5);
+      playSample2(5);
       recordABeat(5);
       break;
     case "7":
-      playSample(6);
+      playSample2(6);
       recordABeat(6);
       break;
     case "8":
-      playSample(7);
+      playSample2(7);
       recordABeat(7);
       break;
     case "9":
-      playSample(8);
+      playSample2(8);
       recordABeat(8);
       break;
     case " ":
@@ -101,47 +101,47 @@ document.addEventListener("keydown", function (event: KeyboardEvent): void {
 });
 
 document.querySelector("#drum1").addEventListener("click", function (): void {
-  playSample(0);
+  playSample2(0);
   recordABeat(0);
 });
 
 document.querySelector("#drum2").addEventListener("click", function (): void {
-  playSample(1);
+  playSample2(1);
   recordABeat(1);
 });
 
 document.querySelector("#drum3").addEventListener("click", function (): void {
-  playSample(2);
+  playSample2(2);
   recordABeat(2);
 });
 
 document.querySelector("#drum4").addEventListener("click", function (): void {
-  playSample(3);
+  playSample2(3);
   recordABeat(3);
 });
 
 document.querySelector("#drum5").addEventListener("click", function (): void {
-  playSample(4);
+  playSample2(4);
   recordABeat(4);
 });
 
 document.querySelector("#drum6").addEventListener("click", function (): void {
-  playSample(5);
+  playSample2(5);
   recordABeat(5);
 });
 
 document.querySelector("#drum7").addEventListener("click", function (): void {
-  playSample(6);
+  playSample2(6);
   recordABeat(6);
 });
 
 document.querySelector("#drum8").addEventListener("click", function (): void {
-  playSample(7);
+  playSample2(7);
   recordABeat(7);
 });
 
 document.querySelector("#drum9").addEventListener("click", function (): void {
-  playSample(8);
+  playSample2(8);
   recordABeat(8);
 });
 
@@ -159,12 +159,12 @@ stopButton.addEventListener("click", function (): void {
 });
 
 //Record_button_EventListener
-recordButtonBlack.addEventListener("click", function (): void {
+recordBBlack.addEventListener("click", function (): void {
   toggleClasses(this, recordButtonRed);
   boolRecord = true;
 });
 recordButtonRed.addEventListener("click", function (): void {
-  toggleClasses(this, recordButtonBlack);
+  toggleClasses(this, recordBBlack);
   boolRecord = false;
 });
 
@@ -183,16 +183,16 @@ closeButton.addEventListener("click", function (): void {
 });
 
 //FUNKTIONS
-//Play_function
-function playSample(x: number): void {
-  sounds[x].play();
+//Play_function(2)
+function playSample2(x: number): void {
+  sound[x].play();
 }
 
 function checkBeat(): void {
   if (boolPlayStop == true) {
     beatInterval = setInterval(function (): void {
       if (i < beatArray.length) {
-        playSample(beatArray[i]);
+        playSample2(beatArray[i]);
         i++;
       } else {
         i = 0;
@@ -222,10 +222,7 @@ function toggleClasses(
 //random_funktion
 // // 0 -> 10
 // Math.floor(Math.random() * 11);
-
-function playRandomSample(x: number): void {
-  sounds[x].play();
-}
+// function playRandomSample(): {};
 
 //KEYBOARD
 //Play_Stop_Button_Keyboard_function
@@ -244,10 +241,10 @@ function playStopKeyboard(): void {
 //Record_Button_Keyboard_function
 function recordKeyboard(): void {
   if (boolRecord == false) {
-    toggleClasses(recordButtonBlack, recordButtonRed);
+    toggleClasses(recordBBlack, recordButtonRed);
     boolRecord = true;
   } else if (boolRecord == true) {
-    toggleClasses(recordButtonRed, recordButtonBlack);
+    toggleClasses(recordButtonRed, recordBBlack);
     boolRecord = false;
   }
 }

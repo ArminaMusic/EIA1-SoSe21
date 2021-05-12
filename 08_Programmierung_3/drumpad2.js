@@ -1,19 +1,19 @@
-//sounds
-var sounds = [];
-sounds[0] = new Audio("./L08/task_material/assets/A.wav");
-sounds[1] = new Audio("./L08/task_material/assets/B.wav");
-sounds[2] = new Audio("./L08/task_material/assets/bass.wav");
-sounds[3] = new Audio("./L08/task_material/assets/guitar.mp3");
-sounds[4] = new Audio("./L08/task_material/assets/8081.wav");
-sounds[5] = new Audio("./L08/task_material/assets/kick.mp3");
-sounds[6] = new Audio("./L08/task_material/assets/8082.wav");
-sounds[7] = new Audio("./L08/task_material/assets/8083.wav");
-sounds[8] = new Audio("./L08/task_material/assets/snare.mp3");
+//sound
+var sound = [];
+sound[0] = new Audio("./L08/task_material/assets/A.wav");
+sound[1] = new Audio("./L08/task_material/assets/B.wav");
+sound[2] = new Audio("./L08/task_material/assets/bass.wav");
+sound[3] = new Audio("./L08/task_material/assets/guitar.mp3");
+sound[4] = new Audio("./L08/task_material/assets/8081.wav");
+sound[5] = new Audio("./L08/task_material/assets/kick.mp3");
+sound[6] = new Audio("./L08/task_material/assets/8082.wav");
+sound[7] = new Audio("./L08/task_material/assets/8083.wav");
+sound[8] = new Audio("./L08/task_material/assets/snare.mp3");
 //HTML_Element
 var playButton = document.getElementById("play");
 var stopButton = document.getElementById("stop");
 var deleteButton = document.getElementById("delete");
-var recordButtonBlack = document.getElementById("record-black");
+var recordBBlack = document.getElementById("record-black");
 var recordButtonRed = document.getElementById("record-red");
 var questionMark = document.getElementById("question-mark");
 var closeButton = document.getElementById("close");
@@ -42,39 +42,39 @@ document.addEventListener("keydown", function (event) {
     //console.log(event);
     switch (event.key) {
         case "1":
-            playSample(0);
+            playSample2(0);
             recordABeat(0);
             break;
         case "2":
-            playSample(1);
+            playSample2(1);
             recordABeat(1);
             break;
         case "3":
-            playSample(2);
+            playSample2(2);
             recordABeat(2);
             break;
         case "4":
-            playSample(3);
+            playSample2(3);
             recordABeat(3);
             break;
         case "5":
-            playSample(4);
+            playSample2(4);
             recordABeat(4);
             break;
         case "6":
-            playSample(5);
+            playSample2(5);
             recordABeat(5);
             break;
         case "7":
-            playSample(6);
+            playSample2(6);
             recordABeat(6);
             break;
         case "8":
-            playSample(7);
+            playSample2(7);
             recordABeat(7);
             break;
         case "9":
-            playSample(8);
+            playSample2(8);
             recordABeat(8);
             break;
         case " ":
@@ -93,39 +93,39 @@ document.addEventListener("keydown", function (event) {
     }
 });
 document.querySelector("#drum1").addEventListener("click", function () {
-    playSample(0);
+    playSample2(0);
     recordABeat(0);
 });
 document.querySelector("#drum2").addEventListener("click", function () {
-    playSample(1);
+    playSample2(1);
     recordABeat(1);
 });
 document.querySelector("#drum3").addEventListener("click", function () {
-    playSample(2);
+    playSample2(2);
     recordABeat(2);
 });
 document.querySelector("#drum4").addEventListener("click", function () {
-    playSample(3);
+    playSample2(3);
     recordABeat(3);
 });
 document.querySelector("#drum5").addEventListener("click", function () {
-    playSample(4);
+    playSample2(4);
     recordABeat(4);
 });
 document.querySelector("#drum6").addEventListener("click", function () {
-    playSample(5);
+    playSample2(5);
     recordABeat(5);
 });
 document.querySelector("#drum7").addEventListener("click", function () {
-    playSample(6);
+    playSample2(6);
     recordABeat(6);
 });
 document.querySelector("#drum8").addEventListener("click", function () {
-    playSample(7);
+    playSample2(7);
     recordABeat(7);
 });
 document.querySelector("#drum9").addEventListener("click", function () {
-    playSample(8);
+    playSample2(8);
     recordABeat(8);
 });
 //play/stop_button_EventListener
@@ -140,12 +140,12 @@ stopButton.addEventListener("click", function () {
     checkBeat();
 });
 //Record_button_EventListener
-recordButtonBlack.addEventListener("click", function () {
+recordBBlack.addEventListener("click", function () {
     toggleClasses(this, recordButtonRed);
     boolRecord = true;
 });
 recordButtonRed.addEventListener("click", function () {
-    toggleClasses(this, recordButtonBlack);
+    toggleClasses(this, recordBBlack);
     boolRecord = false;
 });
 //Questionmark_text_EventListener
@@ -162,15 +162,15 @@ closeButton.addEventListener("click", function () {
     document.querySelector("#text3").classList.add("isHidden");
 });
 //FUNKTIONS
-//Play_function
-function playSample(x) {
-    sounds[x].play();
+//Play_function(2)
+function playSample2(x) {
+    sound[x].play();
 }
 function checkBeat() {
     if (boolPlayStop == true) {
         beatInterval = setInterval(function () {
             if (i < beatArray.length) {
-                playSample(beatArray[i]);
+                playSample2(beatArray[i]);
                 i++;
             }
             else {
@@ -196,9 +196,7 @@ function toggleClasses(firstHtmlElement, secondHtmlElement) {
 //random_funktion
 // // 0 -> 10
 // Math.floor(Math.random() * 11);
-function playRandomSample(x) {
-    sounds[x].play();
-}
+// function playRandomSample(): {};
 //KEYBOARD
 //Play_Stop_Button_Keyboard_function
 function playStopKeyboard() {
@@ -216,11 +214,11 @@ function playStopKeyboard() {
 //Record_Button_Keyboard_function
 function recordKeyboard() {
     if (boolRecord == false) {
-        toggleClasses(recordButtonBlack, recordButtonRed);
+        toggleClasses(recordBBlack, recordButtonRed);
         boolRecord = true;
     }
     else if (boolRecord == true) {
-        toggleClasses(recordButtonRed, recordButtonBlack);
+        toggleClasses(recordButtonRed, recordBBlack);
         boolRecord = false;
     }
 }

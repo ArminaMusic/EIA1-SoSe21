@@ -51,7 +51,7 @@ document.querySelector(".drum_box").addEventListener("click", function (e) {
 
 //function manual play
 function playSample(x: number) {
-  sounds[x].play();
+  sound[x].play();
 }
 
 //Beat_Array

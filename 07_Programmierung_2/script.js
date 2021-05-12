@@ -44,7 +44,7 @@ document.querySelector(".drum_box").addEventListener("click", function (e) {
 });
 //function manual play
 function playSample(x) {
-    sounds[x].play();
+    sound[x].play();
 }
 //Beat_Array
 var beat = [];

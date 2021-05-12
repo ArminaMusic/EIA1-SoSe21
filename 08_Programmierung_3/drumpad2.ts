@@ -16,7 +16,7 @@ const stopButton: HTMLElement = document.getElementById("stop");
 const deleteButton: HTMLElement = document.getElementById("delete");
 const recordBBlack: HTMLElement = document.getElementById("record-black");
 const recordButtonRed: HTMLElement = document.getElementById("record-red");
-const questionMark: HTMLElement = document.getElementById("question-mark");
+const questionMark: HTMLElement = document.getElementById("question_mark");
 const closeButton: HTMLElement = document.getElementById("close");
 const randomButton: HTMLElement = document.getElementById("random");
 

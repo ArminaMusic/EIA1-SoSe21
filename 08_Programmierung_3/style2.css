@@ -128,10 +128,10 @@ ul {
 li {
   text-decoration: none;
 }
-#question-mark {
+#question_mark {
   font-size: 40px;
 }
-#question-mark:hover {
+#question_mark:hover {
   cursor: pointer;
 }
 #close {

@@ -14,15 +14,15 @@ sound[8] = new Audio("./L08/task_material/assets/snare.mp3");
 const playButton: HTMLElement = document.getElementById("play");
 const stopButton: HTMLElement = document.getElementById("stop");
 const deleteButton: HTMLElement = document.getElementById("delete");
-const recordBBlack: HTMLElement = document.getElementById("record-black");
-const recordButtonRed: HTMLElement = document.getElementById("record-red");
+const recordBBlack: HTMLElement = document.getElementById("record_black");
+const recordButtonRed: HTMLElement = document.getElementById("record_blue");
 const questionMark: HTMLElement = document.getElementById("question_mark");
 const closeButton: HTMLElement = document.getElementById("close");
 const randomButton: HTMLElement = document.getElementById("random");
 
 let i: number = 0;
 
-//Array_(Default-Beat)
+//Array_(Default_Beat)
 let beatArray: number[] = [];
 beatArray[0] = 5;
 beatArray[1] = 4;
@@ -31,7 +31,7 @@ beatArray[2] = 8;
 //Beat Start/Stop
 var beatInterval: number;
 
-//Delete-Button
+//Delete_Button
 var resetColor: number;
 deleteButton.addEventListener("click", function (): void {
   beatArray.length = 0;
@@ -41,11 +41,11 @@ deleteButton.addEventListener("click", function (): void {
   }, 800);
 });
 
-//boolean-switches
+//boolean_switches
 let boolRecord: boolean = false;
 let boolPlayStop: boolean = false;
 
-//Drumpad-Buttons_EventListener
+//Drumpad_Buttons_EventListener
 document.addEventListener("keydown", function (event: KeyboardEvent): void {
   //console.log(event);
   switch (event.key) {

@@ -13,20 +13,20 @@ sound[8] = new Audio("./L08/task_material/assets/snare.mp3");
 var playButton = document.getElementById("play");
 var stopButton = document.getElementById("stop");
 var deleteButton = document.getElementById("delete");
-var recordBBlack = document.getElementById("record-black");
-var recordButtonRed = document.getElementById("record-red");
+var recordBBlack = document.getElementById("record_black");
+var recordButtonRed = document.getElementById("record_blue");
 var questionMark = document.getElementById("question_mark");
 var closeButton = document.getElementById("close");
 var randomButton = document.getElementById("random");
 var i = 0;
-//Array_(Default-Beat)
+//Array_(Default_Beat)
 var beatArray = [];
 beatArray[0] = 5;
 beatArray[1] = 4;
 beatArray[2] = 8;
 //Beat Start/Stop
 var beatInterval;
-//Delete-Button
+//Delete_Button
 var resetColor;
 deleteButton.addEventListener("click", function () {
     beatArray.length = 0;
@@ -35,10 +35,10 @@ deleteButton.addEventListener("click", function () {
         deleteButton.setAttribute("style", "color: " + "black");
     }, 800);
 });
-//boolean-switches
+//boolean_switches
 var boolRecord = false;
 var boolPlayStop = false;
-//Drumpad-Buttons_EventListener
+//Drumpad_Buttons_EventListener
 document.addEventListener("keydown", function (event) {
     //console.log(event);
     switch (event.key) {

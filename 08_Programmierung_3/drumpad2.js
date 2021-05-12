@@ -17,6 +17,7 @@ var recordBBlack = document.getElementById("record-black");
 var recordButtonRed = document.getElementById("record-red");
 var questionMark = document.getElementById("question-mark");
 var closeButton = document.getElementById("close");
+var randomButton = document.getElementById("random");
 var i = 0;
 //Array_(Default-Beat)
 var beatArray = [];
@@ -130,6 +131,7 @@ document.querySelector("#drum9").addEventListener("click", function () {
 });
 //play/stop_button_EventListener
 playButton.addEventListener("click", function () {
+    console.log(this);
     toggleClasses(this, stopButton);
     boolPlayStop = true;
     checkBeat();
@@ -148,6 +150,8 @@ recordButtonRed.addEventListener("click", function () {
     toggleClasses(this, recordBBlack);
     boolRecord = false;
 });
+//Random_button_EventListener
+randomButton.addEventListener("click", playRandomSample);
 //Questionmark_text_EventListener
 questionMark.addEventListener("click", function () {
     toggleClasses(this, closeButton);
@@ -167,7 +171,8 @@ function playSample2(x) {
     sound[x].play();
 }
 function checkBeat() {
-    if (boolPlayStop == true) {
+    console.log(boolPlayStop);
+    if (boolPlayStop === true) {
         beatInterval = setInterval(function () {
             if (i < beatArray.length) {
                 playSample2(beatArray[i]);
@@ -194,9 +199,22 @@ function toggleClasses(firstHtmlElement, secondHtmlElement) {
     secondHtmlElement.classList.remove("isHidden");
 }
 //random_funktion
-// // 0 -> 10
-// Math.floor(Math.random() * 11);
-// function playRandomSample(): {};
+// 5 verschiedenen random Sounds hintereinander abspielen
+function playRandomSample() {
+    // 1) clear beatArray
+    beatArray = [];
+    // 2) fill beatArray with 5 radnom numbers
+    for (var i_1 = 0; i_1 < 5; i_1++) {
+        var randomNum = Math.floor(Math.random() * 9);
+        // fill beatarray with random number
+        beatArray.push(randomNum);
+    }
+    // 3) play beatsArray
+    boolPlayStop = true;
+    checkBeat();
+    // 4) show stop button
+    toggleClasses(playButton, stopButton);
+}
 //KEYBOARD
 //Play_Stop_Button_Keyboard_function
 function playStopKeyboard() {

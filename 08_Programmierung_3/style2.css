@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(70, 70, 70), rgb(77, 77, 77));
+}
+h3 {
+  text-align: center;
+  color: #dfdfdf;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum_flexbox {
+  margin-top: 7%;
+  display: flex;
+  width: 500px;
+  height: 550px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.drumbutton {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+  transition: all 0.2s ease-out;
+}
+.drumbutton:hover {
+  cursor: pointer;
+}
+
+i {
+  font-size: 40px;
+  margin-left: 5%;
+}
+
+i:hover {
+  color: #a3ff66;
+  cursor: pointer;
+}
+
+#stop {
+  color: #ff6666;
+}
+#record-red {
+  color: #66e8ff;
+}
+.isHidden {
+  display: none !important;
+}
+#delete:hover {
+  color: #ff6666;
+}
+
+/*Drum_Buttons*/
+#drum1:hover,
+#drum2:hover,
+#drum3:hover,
+#drum4:hover,
+#drum5:hover,
+#drum6:hover,
+#drum7:hover,
+#drum8:hover,
+#drum9:hover {
+  filter: saturate(4);
+}
+
+#drum1 {
+  background-color: #ffa2a2;
+}
+
+#drum2 {
+  background-color: #ffdb98;
+}
+
+#drum3 {
+  background-color: #e4ffa5;
+}
+
+#drum4 {
+  background-color: #a7ffb2;
+}
+
+#drum5 {
+  background-color: #acfcff;
+}
+
+#drum6 {
+  background-color: #b0cbff;
+}
+
+#drum7 {
+  background-color: #d9aaff;
+}
+
+#drum8 {
+  background-color: #ffccff;
+}
+
+#drum9 {
+  background-color: #ffb0de;
+}
+
+/* Erklär-Text */
+footer {
+  width: 80vw;
+  margin-left: 9.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+}
+ul {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+}
+#question-mark {
+  font-size: 40px;
+}
+#question-mark:hover {
+  cursor: pointer;
+}
+#close {
+  color: #ff4242;
+}
+#close:hover {
+  cursor: pointer;
+}

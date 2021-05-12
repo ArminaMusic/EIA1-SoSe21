@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drumpad</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="drumpad2.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h3>
+        Klicke entweder mit der Maus oder benutzte die Tastatur mit den Ziffern
+        1-9 (von links nach rechts, von oben nach unten) um die einzelnen Sounds
+        abzuspielen. Mit Leertaste, "r" und "t" lassen sich der Play/Stop-,
+        Aufnahme- und Lösch-button bedienen.
+      </h3>
+    </header>
+
+    <main>
+      <div class="drum_flexbox">
+        <div class="drumbutton" id="drum1"></div>
+        <div class="drumbutton" id="drum2"></div>
+        <div class="drumbutton" id="drum3"></div>
+        <div class="drumbutton" id="drum4"></div>
+        <div class="drumbutton" id="drum5"></div>
+        <div class="drumbutton" id="drum6"></div>
+        <div class="drumbutton" id="drum7"></div>
+        <div class="drumbutton" id="drum8"></div>
+        <div class="drumbutton" id="drum9"></div>
+        <i id="play" class="fas fa-play"></i>
+        <i id="stop" class="fas fa-stop isHidden"></i>
+        <i id="record-black" class="fas fa-microphone"></i>
+        <i id="record-red" class="fas fa-microphone isHidden"></i>
+        <i id="random" class="fas fa-random"></i>
+        <i id="delete" class="fas fa-trash-alt"></i>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li id="question-mark">?</li>
+        <li id="close" class="text isHidden">- schließen -</li>
+        <br />
+        <li id="text1" class="text isHidden">
+          Mit dürcken auf den Play-Button oder die Leertaste wird der Beat
+          abgespielt. Mit Drücken des Stop-Buttons oder erneutem drücken auf die
+          Leertaste, beenden Sie die Wiedergabe.
+        </li>
+        <br />
+        <li id="text2" class="text isHidden">
+          Klicken Sie auf den Mülleimer oder t um den aktuellen Beat zu löschen.
+        </li>
+        <br />
+        <li id="text3" class="text isHidden">
+          Klicken Sie den Aufnahme-Button oder r, um den Aufnahme-Modus zu
+          starten. Jetzt können schließen den Sounds aus dem Drumpad zu einem
+          neuen Beat zusammenstellen. Wenn Sie alle Sounds hinzugefügt haben,
+          können Sie den Aufnahme-Modus mit erneutem Klick auf den Button oder
+          der r Taste beenden.
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,7 +1,7 @@
-var counting: number = 0;
-var userTask: any = document.getElementById("new-task");
-var clickBool: boolean = false;
-var preventEventBool: boolean = false;
+let counting: number = 0;
+let userTask: any = document.getElementById("new-task");
+let clickBool: boolean = false;
+let preventEventBool: boolean = false;
 
 document.addEventListener("keydown", function (event: KeyboardEvent): void {
   //hier wird die "createNewTask" function ausgelöst

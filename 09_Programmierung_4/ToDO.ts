@@ -57,7 +57,7 @@ function createNewTask(): void {
   counting++;
   tocounter();
 
-  //Kreis-, Abhaken- und Lösch-Button Event Listener mit jeweiliger Funktion
+  //Kreis-, Abhaken- und Lösch-Button Event Listener mit function
   icon01.addEventListener("click", function (): void {
     icon01.classList.add("isHidden");
     icon02.classList.remove("isHidden");

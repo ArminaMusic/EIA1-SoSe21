@@ -1,0 +1,110 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f3333;
+  height: 100%;
+}
+h1 {
+  color: #f0f0f0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  color: #ff7d04;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+#new-task {
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  background-color: #0b6363;
+  color: #f0f0f0;
+  border-radius: 2rem;
+  padding-left: 2rem;
+}
+::placeholder {
+  color: #f0f0f0;
+  opacity: 1;
+}
+#new-task:focus {
+  border-color: #f0f0f0;
+  outline: 0;
+  box-shadow: 0 0 0 1px rgba(55, 68, 70, 0.233);
+}
+
+#counter {
+  font-size: 23px;
+}
+
+.todoList {
+  max-width: 50vw;
+  margin: auto;
+}
+
+#tasks {
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b6363;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0;
+}
+
+.fa-circle,
+.fa-check-circle,
+.fa-trash-alt {
+  color: #ff7d04;
+  font-size: 25px;
+}
+
+.fa-trash-alt {
+  opacity: 70%;
+  transition: all 0.2s ease-out;
+}
+
+.fa-trash-alt:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.fa-circle:hover {
+  cursor: pointer;
+}
+
+.fa-check-circle:hover {
+  cursor: pointer;
+}
+
+.divText {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.task-text {
+  padding-left: 1rem;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* --- Utils --- */
+.isHidden {
+  display: none;
+}

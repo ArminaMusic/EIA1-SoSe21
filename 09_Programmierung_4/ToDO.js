@@ -49,7 +49,7 @@ function createNewTask() {
     //der Task-Zähler wird erhöht und die "tocounter" function aktualisiert
     counting++;
     tocounter();
-    //Kreis-, Abhaken- und Lösch-Button Event Listener mit jeweiliger Funktion
+    //Kreis-, Abhaken- und Lösch-Button Event Listener mit function
     icon01.addEventListener("click", function () {
         icon01.classList.add("isHidden");
         icon02.classList.remove("isHidden");
